@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 15 13:57:54 EET 2017</td>
+</tr>
+<tr><td>Total time:</td><td>210 seconds (210891 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.addCandidatesListTest()'><b>addCandidatesListTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: Kainavininkø, data-county.csv</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.voting.DeletionOfAllData.deleteAllData()'><b>deleteAllData</b><br>Test class: it.akademija.voting.DeletionOfAllData<br>Parameters: src/test/resources/county-input.txt, Akmeninikø, Zuokucio partija, Bruzgesss partija</td>
+<td></td>
+<td>26</td>
+<td>it.akademija.voting.DeletionOfAllData@5f341870</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.deleteCandidatesTest()'><b>deleteCandidatesTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Bruzgesss partija</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.deleteCountyTest()'><b>deleteCountyTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: Senamiestënø</td>
+<td></td>
+<td>6</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.deleteDistrictTest()'><b>deleteDistrictTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: Rugiðkiø</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.deletePartyTest()'><b>deletePartyTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Zuokucio partija</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.ResultsTest.deleteResultsInMultiMemberTest()'><b>deleteResultsInMultiMemberTest</b><br>Test class: it.akademija.admin.ResultsTest<br>Parameters: Papilëniðkiø</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.admin.ResultsTest@14bf9759</td></tr>
+<tr>
+<td title='it.akademija.admin.ResultsTest.deleteResultsInSingleMemberTest()'><b>deleteResultsInSingleMemberTest</b><br>Test class: it.akademija.admin.ResultsTest<br>Parameters: Papilëniðkiø</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.ResultsTest@14bf9759</td></tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.editCountyTest()'><b>editCountyTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: Akmeninës, Akmeninikø</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.editDistrictTest()'><b>editDistrictTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: Jovariðkiø, Jovarikantiðkiø, S. Stanevièiaus g. 100, Vilnius, 2000, Akmeninikø</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.CandidatesTest.editNameAndSurnameTest()'><b>editNameAndSurnameTest</b><br>Test class: it.akademija.admin.CandidatesTest<br>Parameters: 37, Algirdas, Paleckis, 1966-06-06, Algis, Kurinskis, 1959-06-15, Socialdemokratas, 88</td>
+<td></td>
+<td>7</td>
+<td>it.akademija.admin.CandidatesTest@31ef45e3</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.editPartyTest()'><b>editPartyTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Zuokuciooo partija, Zuokucio partija, 66</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.representative.MultiMemberTest.fillingMultiMemberResults()'><b>fillingMultiMemberResults</b><br>Test class: it.akademija.representative.MultiMemberTest</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.representative.MultiMemberTest@3c0ecd4b</td></tr>
+<tr>
+<td title='it.akademija.representative.SingleMemberTest.fillingSingleMemberResults()'><b>fillingSingleMemberResults</b><br>Test class: it.akademija.representative.SingleMemberTest</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.representative.SingleMemberTest@598067a5</td></tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.registerCountyTest()'><b>registerCountyTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: Akmeninës</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.registerCountyTest()'><b>registerCountyTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: Akmeninës</td>
+<td></td>
+<td>0</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.registerDistrictTest()'><b>registerDistrictTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: Fabijonkiø, Fabijonø g. 15, Vilnius, 2416, Akmeninikø</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.registerDistrictTest()'><b>registerDistrictTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: Fabijonkiø, Fabijonø g. 15, Vilnius, 2416, Akmeninikø</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.registerExistingDistrictAndAssigntToDifferentCountyTest()'><b>registerExistingDistrictAndAssigntToDifferentCountyTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: Fabijonkiø, Fabijonø g. 15, Vilnius, 2416, Naujamiestënø</td>
+<td></td>
+<td>2</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.CountyTest.registerMultipleCountiesTest()'><b>registerMultipleCountiesTest</b><br>Test class: it.akademija.admin.CountyTest<br>Parameters: src/test/resources/county-input.txt</td>
+<td></td>
+<td>7</td>
+<td>it.akademija.admin.CountyTest@13deb50e</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.registerMultipleDistrictsToDifferentCountiesTest()'><b>registerMultipleDistrictsToDifferentCountiesTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: src/test/resources/variousDistricts-input.txt, src/test/resources/variousDistrictsAddress-input.txt, src/test/resources/variousDistrictsVoters-input.txt, src/test/resources/county-input.txt</td>
+<td></td>
+<td>5</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.DistrictTest.registerMultipleDistrictsToOneCountyTest()'><b>registerMultipleDistrictsToOneCountyTest</b><br>Test class: it.akademija.admin.DistrictTest<br>Parameters: src/test/resources/district-input.txt, src/test/resources/districtAddress-input.txt, src/test/resources/districtVoters-input.txt, Akmeninikø</td>
+<td></td>
+<td>5</td>
+<td>it.akademija.admin.DistrictTest@239963d8</td></tr>
+<tr>
+<td title='it.akademija.admin.RepresentativeTest.registerMultipleRepresentativesTest()'><b>registerMultipleRepresentativesTest</b><br>Test class: it.akademija.admin.RepresentativeTest<br>Parameters: src/test/resources/representativeNames-input.txt, src/test/resources/representativeSurnames-input.txt, src/test/resources/variousDistricts-input.txt</td>
+<td></td>
+<td>13</td>
+<td>it.akademija.admin.RepresentativeTest@3abbfa04</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.registerPartyTest()'><b>registerPartyTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Zuokuciooo partija, 56, data-party-3.csv</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.registerPartyTest()'><b>registerPartyTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Zuokuciooo partija, 56, data-party-3.csv</td>
+<td></td>
+<td>0</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.registerPartyTest2()'><b>registerPartyTest2</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Bruzgesss partija, 442, data-party-3.csv</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.registerPartyWithOtherFileTest()'><b>registerPartyWithOtherFileTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Bruzgesss partija, 442, data-party-not-csv.txt</td>
+<td></td>
+<td>1</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.PartyTest.registerPartyWithoutFileTest()'><b>registerPartyWithoutFileTest</b><br>Test class: it.akademija.admin.PartyTest<br>Parameters: Bruzgesss partija, 442, </td>
+<td></td>
+<td>0</td>
+<td>it.akademija.admin.PartyTest@57fffcd7</td></tr>
+<tr>
+<td title='it.akademija.admin.RepresentativeTest.registerSingleRepresentativeTest()'><b>registerSingleRepresentativeTest</b><br>Test class: it.akademija.admin.RepresentativeTest<br>Parameters: Birutë, Stolytë, Fabijonkiø</td>
+<td></td>
+<td>3</td>
+<td>it.akademija.admin.RepresentativeTest@3abbfa04</td></tr>
+</table><p>
+</body>
+</html>

@@ -159,10 +159,11 @@ public class DataPreLoader {
             final List<String> names = bufferedReader.lines().collect(Collectors.toList());
             final List<DistrictEntity> districtRepositoryAll = districtRepository.findAll();
             for (int i = 0; i < districtRepositoryAll.size(); i++) {
+                if(districtRepositoryAll.get(i).getId() != 5){
                 String name = names.get(new Random().nextInt(998) + 1) + "as";
                 String surname = names.get(new Random().nextInt(998) + 1) + "evičius";
                 saveRep(districtRepositoryAll.get(i), name, surname);
-
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

@@ -24,6 +24,9 @@ import org.springframework.test.context.support.DirtiesContextTestExecutionListe
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.springframework.test.context.web.ServletTestExecutionListener;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * Created by Pavel on 2017-03-15.
  */
@@ -37,10 +40,14 @@ import org.springframework.test.context.web.ServletTestExecutionListener;
         DirtiesContextTestExecutionListener.class,
         TransactionalTestExecutionListener.class,
         WithSecurityContextTestExcecutionListener.class})
-@WithMockUser(username="admin",roles={"ADMIN"})
+@WithMockUser(username="admin",roles={"ADMIN","REPRESENTATIVE"})
 public class SecurityTest{
+
     @Test
     public void connectTest(){
         Assert.assertThat("admin", CoreMatchers.is(SecurityContextHolder.getContext().getAuthentication().getName()));
+        List<String> roles = SecurityContextHolder.getContext().getAuthentication().getAuthorities().stream().map(d -> d.getAuthority()).collect(Collectors.toList());
+        roles.forEach(System.out::println);
+        Assert.assertThat(roles.contains("ROLE_ADMIN"),CoreMatchers.is(true));
     }
 }

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="variousDistrictsVotersFile" value="src/test/resources/variousDistrictsVoters-input.txt"/>
+  <parameter name="loginLink" value="http://localhost:9090/#/login/"/>
+  <parameter name="representativeSurname" value="Stolytė"/>
+  <parameter name="partyFile" value="data-party-not-csv.txt"/>
+  <parameter name="password" value="admin"/>
+  <parameter name="districtVoter" value="2416"/>
+  <parameter name="partyName" value="Zuokuciooo partija"/>
+  <parameter name="newCountyName" value="Akmeninikų"/>
+  <parameter name="newCandidateBirthDate" value="1959-06-15"/>
+  <parameter name="districtNameToDelete" value="Rugiškių"/>
+  <parameter name="newDistrictName" value="Jovarikantiškių"/>
+  <parameter name="newDistrictAddress" value="S. Stanevičiaus g. 100, Vilnius"/>
+  <parameter name="representativeNamesFile" value="src/test/resources/representativeNames-input.txt"/>
+  <parameter name="noFile" value=""/>
+  <parameter name="newCandidateSurname" value="Kurinskis"/>
+  <parameter name="districtNameToEdit" value="Jovariškių"/>
+  <parameter name="candidateNumber" value="37"/>
+  <parameter name="partyNumber" value="56"/>
+  <parameter name="representativeName" value="Birutė"/>
+  <parameter name="newCandidateName" value="Algis"/>
+  <parameter name="wrongPassword" value="1234"/>
+  <parameter name="countyFile" value="src/test/resources/county-input.txt"/>
+  <parameter name="representativeLink" value="http://localhost:9090/#/representative/"/>
+  <parameter name="partyNumber2" value="442"/>
+  <parameter name="candidateBirthDate" value="1966-06-06"/>
+  <parameter name="link" value="http://localhost:9090"/>
+  <parameter name="districtAddress" value="Fabijonų g. 15, Vilnius"/>
+  <parameter name="countyName2" value="Naujamiestėnų"/>
+  <parameter name="districtAddressFile" value="src/test/resources/districtAddress-input.txt"/>
+  <parameter name="districtVotersFile" value="src/test/resources/districtVoters-input.txt"/>
+  <parameter name="representativeSurnamesFile" value="src/test/resources/representativeSurnames-input.txt"/>
+  <parameter name="partyName2" value="Bruzgesss partija"/>
+  <parameter name="countyToDelete" value="Senamiestėnų"/>
+  <parameter name="newCandidateNumber" value="88"/>
+  <parameter name="countyName" value="Akmeninės"/>
+  <parameter name="newDistrictVoter" value="2000"/>
+  <parameter name="newCandidateInfo" value="Socialdemokratas"/>
+  <parameter name="newPartyNumber" value="66"/>
+  <parameter name="usernameAdmin" value="admin"/>
+  <parameter name="districtName" value="Fabijonkių"/>
+  <parameter name="countyNameForVoting" value="Kainavininkų"/>
+  <parameter name="candidatesList" value="data-county.csv"/>
+  <parameter name="districtFile" value="src/test/resources/district-input.txt"/>
+  <parameter name="variousDistrictsFile" value="src/test/resources/variousDistricts-input.txt"/>
+  <parameter name="variousDistrictsAddressFile" value="src/test/resources/variousDistrictsAddress-input.txt"/>
+  <parameter name="candidateName" value="Algirdas"/>
+  <parameter name="candidateSurname" value="Paleckis"/>
+  <parameter name="partyCsvFile" value="data-party-3.csv"/>
+  <parameter name="newPartyName" value="Zuokucio partija"/>
+  <test name="Suite(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="it.akademija.admin.ResultsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteResultsInMultiMemberTest"/>
+          <include name="settingUp"/>
+          <include name="deleteResultsInSingleMemberTest"/>
+          <include name="endingTestActivities"/>
+        </methods>
+      </class> <!-- it.akademija.admin.ResultsTest -->
+    </classes>
+  </test> <!-- Suite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

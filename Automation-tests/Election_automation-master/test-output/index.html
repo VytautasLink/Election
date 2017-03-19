@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\User\workspace\Projektas\Election_automation\testngSmoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="addCandidatesList(data-county-valid.csv)">addCandidatesList(data-county-valid.csv)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="confirmingMultiMemberResults">confirmingMultiMemberResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="confirmingSingleMemberResults(admin, admin)">confirmingSingleMemberResults(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="fillingMultiMemberResults">fillingMultiMemberResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="fillingSingleMemberResults">fillingSingleMemberResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="loginAdministrator(admin, admin)">loginAdministrator(admin, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="registerCounty(src/test/resources/countyRandom.txt)">registerCounty(src/test/resources/countyRandom.txt)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="registerDistrict(src/test/resources/districtRandom.txt, Žvaigždžių g. 33)">registerDistrict(src/test/resources/districtRandom.txt, Žvaigždžių g. 33)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="registerParty(src/test/resources/partyRandom.txt, konservatoriai.csv)">registerParty(src/test/resources/partyRandom.txt, konservatoriai.csv)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="it.akademija.smoke.SmokeTest" hash-for-method="registerRepresentative(Dovilė, Pankavilė)">registerRepresentative(Dovilė, Pankavilė)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">it.akademija.smoke.SmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCandidatesList(data-county-valid.csv)">
+                  </a> <!-- addCandidatesList(data-county-valid.csv) -->
+                  <span class="method-name">addCandidatesList</span>
+                  <span class="parameters">(data-county-valid.csv)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmingMultiMemberResults">
+                  </a> <!-- confirmingMultiMemberResults -->
+                  <span class="method-name">confirmingMultiMemberResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmingSingleMemberResults(admin, admin)">
+                  </a> <!-- confirmingSingleMemberResults(admin, admin) -->
+                  <span class="method-name">confirmingSingleMemberResults</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillingMultiMemberResults">
+                  </a> <!-- fillingMultiMemberResults -->
+                  <span class="method-name">fillingMultiMemberResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillingSingleMemberResults">
+                  </a> <!-- fillingSingleMemberResults -->
+                  <span class="method-name">fillingSingleMemberResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAdministrator(admin, admin)">
+                  </a> <!-- loginAdministrator(admin, admin) -->
+                  <span class="method-name">loginAdministrator</span>
+                  <span class="parameters">(admin, admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerCounty(src/test/resources/countyRandom.txt)">
+                  </a> <!-- registerCounty(src/test/resources/countyRandom.txt) -->
+                  <span class="method-name">registerCounty</span>
+                  <span class="parameters">(src/test/resources/countyRandom.txt)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDistrict(src/test/resources/districtRandom.txt, Žvaigždžių g. 33)">
+                  </a> <!-- registerDistrict(src/test/resources/districtRandom.txt, Žvaigždžių g. 33) -->
+                  <span class="method-name">registerDistrict</span>
+                  <span class="parameters">(src/test/resources/districtRandom.txt, Žvaigždžių g. 33)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerParty(src/test/resources/partyRandom.txt, konservatoriai.csv)">
+                  </a> <!-- registerParty(src/test/resources/partyRandom.txt, konservatoriai.csv) -->
+                  <span class="method-name">registerParty</span>
+                  <span class="parameters">(src/test/resources/partyRandom.txt, konservatoriai.csv)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerRepresentative(Dovilė, Pankavilė)">
+                  </a> <!-- registerRepresentative(Dovilė, Pankavilė) -->
+                  <span class="method-name">registerRepresentative</span>
+                  <span class="parameters">(Dovilė, Pankavilė)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\User\workspace\Projektas\Election_automation\testngSmoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;newDistrictName&quot; value=&quot;Jovarų&quot;/&gt;
+  &lt;parameter name=&quot;loginLink&quot; value=&quot;http://localhost:9090/#/login/&quot;/&gt;
+  &lt;parameter name=&quot;usernameAdmin&quot; value=&quot;admin&quot;/&gt;
+  &lt;parameter name=&quot;districtRandom&quot; value=&quot;src/test/resources/districtRandom.txt&quot;/&gt;
+  &lt;parameter name=&quot;partyRandom&quot; value=&quot;src/test/resources/partyRandom.txt&quot;/&gt;
+  &lt;parameter name=&quot;districtName&quot; value=&quot;Žvaigždžių&quot;/&gt;
+  &lt;parameter name=&quot;newDistrictAddress&quot; value=&quot;S. Stanevičiaus g. 100, Vilnius&quot;/&gt;
+  &lt;parameter name=&quot;representativeSurname&quot; value=&quot;Pankavilė&quot;/&gt;
+  &lt;parameter name=&quot;link&quot; value=&quot;http://localhost:9090&quot;/&gt;
+  &lt;parameter name=&quot;districtAddress&quot; value=&quot;Žvaigždžių g. 33&quot;/&gt;
+  &lt;parameter name=&quot;candidatesList&quot; value=&quot;data-county-valid.csv&quot;/&gt;
+  &lt;parameter name=&quot;countyRandom&quot; value=&quot;src/test/resources/countyRandom.txt&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
+  &lt;parameter name=&quot;districtVoter&quot; value=&quot;1500&quot;/&gt;
+  &lt;parameter name=&quot;districtNameToEdit&quot; value=&quot;Jovaroo&quot;/&gt;
+  &lt;parameter name=&quot;differentCounty&quot; value=&quot;Senamiesčioo&quot;/&gt;
+  &lt;parameter name=&quot;partyName&quot; value=&quot;Konservatoriai&quot;/&gt;
+  &lt;parameter name=&quot;partyCsvFile&quot; value=&quot;konservatoriai.csv&quot;/&gt;
+  &lt;parameter name=&quot;partyNumber&quot; value=&quot;99&quot;/&gt;
+  &lt;parameter name=&quot;representativeName&quot; value=&quot;Dovilė&quot;/&gt;
+  &lt;parameter name=&quot;districtNameToDelete&quot; value=&quot;Rugių&quot;/&gt;
+  &lt;parameter name=&quot;countyName&quot; value=&quot;Kniaudiškiečių&quot;/&gt;
+  &lt;parameter name=&quot;newDistrictVoter&quot; value=&quot;2000&quot;/&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;it.akademija.smoke.SmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'confirmingSingleMemberResults')
+data.setCell(0, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(0, 3, 14841);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCandidatesList')
+data.setCell(1, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(1, 3, 8692);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'registerRepresentative')
+data.setCell(2, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(2, 3, 7901);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerCounty')
+data.setCell(3, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(3, 3, 3990);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fillingMultiMemberResults')
+data.setCell(4, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(4, 3, 3865);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerDistrict')
+data.setCell(5, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(5, 3, 2823);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'fillingSingleMemberResults')
+data.setCell(6, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(6, 3, 2149);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registerParty')
+data.setCell(7, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(7, 3, 1470);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'confirmingMultiMemberResults')
+data.setCell(8, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(8, 3, 1107);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginAdministrator')
+data.setCell(9, 2, 'it.akademija.smoke.SmokeTest')
+data.setCell(9, 3, 787);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">it.akademija.smoke.SmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">settingUp(firefox, admin, admin, http://localhost:9090/#/login/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12250 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginAdministrator(admin, admin)</span>
+                <span class="method-start">12291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerCounty(src/test/resources/countyRandom.txt)</span>
+                <span class="method-start">13082 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerDistrict(src/test/resources/districtRandom.txt, Žvaigždžių g. 33)</span>
+                <span class="method-start">17076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerRepresentative(Dovilė, Pankavilė)</span>
+                <span class="method-start">19901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerParty(src/test/resources/partyRandom.txt, konservatoriai.csv)</span>
+                <span class="method-start">27807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCandidatesList(data-county-valid.csv)</span>
+                <span class="method-start">29278 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillingSingleMemberResults</span>
+                <span class="method-start">37972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillingMultiMemberResults</span>
+                <span class="method-start">40123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmingSingleMemberResults(admin, admin)</span>
+                <span class="method-start">43992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmingMultiMemberResults</span>
+                <span class="method-start">58836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endingTestActivities</span>
+                <span class="method-start">59945 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

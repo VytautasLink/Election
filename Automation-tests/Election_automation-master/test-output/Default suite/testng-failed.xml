@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="countyFile" value="src/test/resources/county-input.txt"/>
+  <parameter name="differentCounty" value="Senamiescio"/>
+  <parameter name="candidatesList" value="data-county.csv"/>
+  <parameter name="newCountyName" value="Akmenės"/>
+  <parameter name="countyName" value="Akmenes"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="it.akademija.admin.TestCounty">
+        <methods>
+          <include name="testDeleteCounty" invocation-numbers="0"/>
+          <include name="testEditCounty" invocation-numbers="0"/>
+          <include name="testRegisterMultipleCounties" invocation-numbers="0"/>
+          <include name="testRegisterCounty" invocation-numbers="0 0"/>
+        </methods>
+      </class> <!-- it.akademija.admin.TestCounty -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

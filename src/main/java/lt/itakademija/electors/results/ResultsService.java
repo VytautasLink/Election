@@ -93,11 +93,14 @@ public class ResultsService {
         report.setVotersCount(votersCount);
 
         int validCount = county.getDistricts()
-                .stream().filter(f -> f.getResultMultiEntity().size() != 0)
+                .stream()
+                .filter(f -> f.getResultMultiEntity().size() != 0)
                 .mapToInt(d -> d.getResultMultiEntity()
                         .stream()
                         .mapToInt(r -> r.getVotes().intValue())
-                        .sum() + d.getSpoiledMulti()).sum();
+                        .sum()
+                        + d.getSpoiledMulti())
+                .sum();
         report.setValidCount(validCount);
 
         int spoiledSingle = getSpoiledSingle(county);

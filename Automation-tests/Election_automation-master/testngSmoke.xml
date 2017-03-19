@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="link" value="http://localhost:9090" />
+	<parameter name="usernameAdmin" value="admin" />
+	<parameter name="password" value="admin" />
+	<parameter name="loginLink" value="http://localhost:9090/#/login/" />
+	<parameter name="countyName" value="Kniaudiškiečių" />
+	<parameter name="countyRandom" value="src/test/resources/countyRandom.txt" />
+	<parameter name="districtRandom" value="src/test/resources/districtRandom.txt" />
+	<parameter name="partyRandom" value="src/test/resources/partyRandom.txt" />
+	<parameter name="candidatesList" value="data-county-valid.csv" />
+	<parameter name="districtName" value="Žvaigždžių" />
+	<parameter name="districtAddress" value="Žvaigždžių g. 33" />
+	<parameter name="districtVoter" value="1500" />
+	<parameter name="districtNameToDelete" value="Rugių" />
+	<parameter name="districtNameToEdit" value="Jovaroo" />
+	<parameter name="newDistrictName" value="Jovarų" />
+	<parameter name="newDistrictAddress" value="S. Stanevičiaus g. 100, Vilnius" />
+	<parameter name="newDistrictVoter" value="2000" />
+	<parameter name="differentCounty" value="Senamiesčioo" />
+	<parameter name="representativeName" value="Dovilė" />
+	<parameter name="representativeSurname" value="Pankavilė" />
+	<parameter name="partyName" value="Konservatoriai" />
+	<parameter name="partyNumber" value="99" />
+	<parameter name="partyCsvFile" value="konservatoriai.csv" />
+	
+	<test name="ChromeTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="it.akademija.smoke.SmokeTest" />
+		</classes>
+	</test>
+</suite>

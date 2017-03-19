@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60008" started-at="2017-03-15T12:01:34Z" finished-at="2017-03-15T12:02:34Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="60008" started-at="2017-03-15T12:01:34Z" finished-at="2017-03-15T12:02:34Z">
+      <class name="it.akademija.smoke.SmokeTest">
+        <test-method status="PASS" signature="settingUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:it.akademija.smoke.SmokeTest@548e7350]" name="settingUp" is-config="true" duration-ms="12250" started-at="2017-03-15T14:01:34Z" finished-at="2017-03-15T14:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://localhost:9090/#/login/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:it.akademija.smoke.SmokeTest@548e7350]" name="setUp" is-config="true" duration-ms="23" started-at="2017-03-15T14:01:47Z" finished-at="2017-03-15T14:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginAdministrator(java.lang.String, java.lang.String)[pri:1, instance:it.akademija.smoke.SmokeTest@548e7350]" name="loginAdministrator" duration-ms="787" started-at="2017-03-15T14:01:47Z" finished-at="2017-03-15T14:01:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAdministrator -->
+        <test-method status="PASS" signature="registerCounty(java.lang.String)[pri:2, instance:it.akademija.smoke.SmokeTest@548e7350]" name="registerCounty" duration-ms="3990" started-at="2017-03-15T14:01:47Z" finished-at="2017-03-15T14:01:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/countyRandom.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerCounty -->
+        <test-method status="PASS" signature="registerDistrict(java.lang.String, java.lang.String)[pri:3, instance:it.akademija.smoke.SmokeTest@548e7350]" name="registerDistrict" duration-ms="2823" started-at="2017-03-15T14:01:51Z" finished-at="2017-03-15T14:01:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/districtRandom.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Žvaigždžių g. 33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerDistrict -->
+        <test-method status="PASS" signature="registerRepresentative(java.lang.String, java.lang.String)[pri:4, instance:it.akademija.smoke.SmokeTest@548e7350]" name="registerRepresentative" duration-ms="7901" started-at="2017-03-15T14:01:54Z" finished-at="2017-03-15T14:02:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dovilė]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pankavilė]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerRepresentative -->
+        <test-method status="PASS" signature="registerParty(java.lang.String, java.lang.String)[pri:5, instance:it.akademija.smoke.SmokeTest@548e7350]" name="registerParty" duration-ms="1470" started-at="2017-03-15T14:02:02Z" finished-at="2017-03-15T14:02:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/partyRandom.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[konservatoriai.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerParty -->
+        <test-method status="PASS" signature="addCandidatesList(java.lang.String)[pri:6, instance:it.akademija.smoke.SmokeTest@548e7350]" name="addCandidatesList" duration-ms="8692" started-at="2017-03-15T14:02:04Z" finished-at="2017-03-15T14:02:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data-county-valid.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCandidatesList -->
+        <test-method status="PASS" signature="fillingSingleMemberResults()[pri:8, instance:it.akademija.smoke.SmokeTest@548e7350]" name="fillingSingleMemberResults" duration-ms="2149" started-at="2017-03-15T14:02:12Z" finished-at="2017-03-15T14:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingSingleMemberResults -->
+        <test-method status="PASS" signature="fillingMultiMemberResults()[pri:9, instance:it.akademija.smoke.SmokeTest@548e7350]" name="fillingMultiMemberResults" duration-ms="3865" started-at="2017-03-15T14:02:14Z" finished-at="2017-03-15T14:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingMultiMemberResults -->
+        <test-method status="PASS" signature="confirmingSingleMemberResults(java.lang.String, java.lang.String)[pri:11, instance:it.akademija.smoke.SmokeTest@548e7350]" name="confirmingSingleMemberResults" duration-ms="14841" started-at="2017-03-15T14:02:18Z" finished-at="2017-03-15T14:02:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmingSingleMemberResults -->
+        <test-method status="PASS" signature="confirmingMultiMemberResults()[pri:12, instance:it.akademija.smoke.SmokeTest@548e7350]" name="confirmingMultiMemberResults" duration-ms="1107" started-at="2017-03-15T14:02:33Z" finished-at="2017-03-15T14:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmingMultiMemberResults -->
+        <test-method status="PASS" signature="endingTestActivities()[pri:0, instance:it.akademija.smoke.SmokeTest@548e7350]" name="endingTestActivities" is-config="true" duration-ms="48" started-at="2017-03-15T14:02:34Z" finished-at="2017-03-15T14:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endingTestActivities -->
+      </class> <!-- it.akademija.smoke.SmokeTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

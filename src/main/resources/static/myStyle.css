@@ -170,15 +170,12 @@ body {
 
 .panel-default>.panel-heading{
   text-transform: uppercase;
-  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow:0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   margin: -1px;
   border: none;
   border-radius: 0;
   padding: 13;
   color: rgb(35, 45, 43);
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(242, 242, 242);
 }
 
 #exTab1 .tab-content {
@@ -316,16 +313,13 @@ body {
   width: 100%;
   text-align: center;
 }
-
 .paginatorCustom > ul{
   margin: 5px auto;
 }
-
 .panel-title.active > .fa-sort-desc{
     transition: 0.4s;
     transform: rotate(-90deg);
 }
-
 h4.panel-title > i{
     transition: 0.4s;
     transform: rotate(-90deg);
@@ -334,26 +328,21 @@ h4.panel-title:hover > i{
    transition: 0.4s;
    transform: rotate(-75deg);
 }
-
 h4.panel-title.collapsed > i{
     transition: 0.4s;
     transform: rotate(0deg);
 }
-
 h4.panel-title.collapsed:hover > i{
     transition: 0.4s;
     transform: rotate(-359deg);
 }
 /* PAGINATION END*/
 /*SEARCH BAR START*/
-
-
 div.my-nav-search{
   padding: 0px;
   margin: 8px 0px;
   background: none;
 }
-
 .search-input{
   background: black;
   color : white;
@@ -364,7 +353,6 @@ div.my-nav-search{
   -webkit-transition: all 0.7s ease; /* Safari */
   transition: all 0.7s ease;
 }
-
 div.my-nav-search > span > button{
   border: none;
   border-radius: 1px;
@@ -381,12 +369,10 @@ div.my-nav-search > span > button:hover{
   -webkit-transition: all 0.7s ease; /* Safari */
   transition: all 0.7s ease;
 }
-
 div.my-nav-search > span > button:active{
   background: inherit;
   color: #ff6e21;
 }
-
 div.my-nav-search > span > button:focus{
   background: inherit;
   color: #ff6e21
